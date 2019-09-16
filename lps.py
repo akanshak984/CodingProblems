@@ -10,8 +10,8 @@ def longestPalindrome(s):
                     A[i][j]=A[i+1][j-1]+2
                 else:
                     A[i][j]=max(A[i][j-1], A[i+1][j])
-        print (A)
+        # print (A)
         return A[0][n-1]
 
-print ("Length of the longest palindromic subsequence is", longestPalindrome('babcbab'))
+print ("Length of the longest palindromic subsequence is", longestPalindrome('malayalam'))
 
